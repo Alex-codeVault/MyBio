@@ -8,4 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <drawable name="blue_color">#007eee</drawable>
+    <drawable name="lightBlue_color">#1E007EEE</drawable>
 </resources>
