@@ -11,15 +11,37 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/small_margin"
         android:text="@string/name"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#222222"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height"
+        android:layout_marginStart="@dimen/mid_margin"
+        android:layout_marginTop="@dimen/midLarge_margin"
+        android:layout_marginEnd="@dimen/mid_margin">
+
+        <TextView
+            android:id="@+id/bio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bio"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+    </ScrollView>
 
     <Button
         android:id="@+id/btn_top"
-        style="@style/Widget.AppCompat.Button.Coloredc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/midLeft_margin"
+        android:layout_marginTop="@dimen/large_margin"
         android:background="@drawable/blue_color"
+        android:isScrollContainer="false"
         android:shadowDy="10"
         android:text="@string/btn_submit"
         android:textColor="#FFEB3B" />
+
 </LinearLayout>

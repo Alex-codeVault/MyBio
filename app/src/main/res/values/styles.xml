@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,5 +9,5 @@
     </style>
 
     <drawable name="blue_color">#007eee</drawable>
-    <drawable name="lightBlue_color">#1E007EEE</drawable>
+    <drawable name="lightBlue_color">#F3F8FF</drawable>
 </resources>

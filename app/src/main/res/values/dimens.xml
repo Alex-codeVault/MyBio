@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="small_margin">10dp</dimen>
+    <dimen name="large_margin">100dp</dimen>
+    <dimen name="mid_margin">30dp</dimen>
+    <dimen name="midLarge_margin">160dp</dimen>
+    <dimen name="midLeft_margin">300dp</dimen>
+    <dimen name="height">300dp</dimen>
 </resources>
