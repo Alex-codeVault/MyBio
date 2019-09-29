@@ -9,11 +9,24 @@
         android:id="@+id/textView_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginTop="@dimen/mid_margin"
+        android:fontFamily="@font/roboto_thin"
         android:text="@string/name"
         android:textAlignment="center"
-        android:textColor="#222222"
+        android:textColor="#444444"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_margin"
+        android:ems="10"
+        android:hint="@string/name_question"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#007EEE" />
 
     <ScrollView
         android:id="@+id/bio_scroll"
@@ -27,8 +40,9 @@
             android:id="@+id/bio_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
             android:text="@string/bio"
-            android:textColor="@color/colorPrimary"
+            android:textColor="#F2007EEE"
             android:textSize="20sp" />
     </ScrollView>
 
