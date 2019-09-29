@@ -2,23 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
     android:background="@drawable/lightBlue_color"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:textAlignment="center">
 
     <TextView
         android:id="@+id/textView_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/mid_margin"
         android:fontFamily="@font/roboto_thin"
+        android:shadowColor="#333333"
+        android:shadowDx="0"
         android:text="@string/name"
         android:textAlignment="center"
-        android:textColor="#444444"
-        android:textSize="24sp" />
+        android:textColor="#666666"
+        android:textColorHighlight="#7CC0FF"
+        android:textColorHint="#7CC0FF"
+        android:textColorLink="#7CC0FF"
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/inputText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/mid_margin"
         android:ems="10"
@@ -26,7 +33,25 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColorHint="#007EEE" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#555555"
+        android:textColorHighlight="#7CC0FF"
+        android:textColorHint="#007EEE"
+        android:textColorLink="#7CC0FF"
+        android:textCursorDrawable="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nickname"
+        android:textColor="#F2007EEE"
+        android:textColorHighlight="#7CC0FF"
+        android:textColorHint="#7CC0FF"
+        android:textColorLink="#7CC0FF"
+        android:textSize="30sp" />
 
     <ScrollView
         android:id="@+id/bio_scroll"
@@ -43,19 +68,21 @@
             android:fontFamily="@font/roboto"
             android:text="@string/bio"
             android:textColor="#F2007EEE"
+            android:textColorHighlight="#7CC0FF"
+            android:textColorHint="#7CC0FF"
+            android:textColorLink="#7CC0FF"
             android:textSize="20sp" />
     </ScrollView>
 
     <Button
-        android:id="@+id/btn_top"
+        android:id="@+id/btn_done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/midLeft_margin"
-        android:layout_marginTop="@dimen/large_margin"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginEnd="@dimen/small_margin"
         android:background="@drawable/blue_color"
-        android:isScrollContainer="false"
-        android:shadowDy="10"
-        android:text="@string/btn_submit"
+        android:text="@string/btn_done"
         android:textColor="#FFEB3B" />
 
 </LinearLayout>

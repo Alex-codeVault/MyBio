@@ -1,14 +1,16 @@
 <resources>
     <string name="app_name">My Bio</string>
     <string name="name">Alex</string>
-    <string name="btn_submit">ok</string>
+    <string name="btn_done">ok</string>
     <string name="bio">
         Hello, I am student at College of Southern Nevada\n\n
         I created this bio application.\n\n
+        Something to scroll.\n\n
         Want gives birth to need.\n
         Need is a result of want.\n
         I want, so I need.\n
         I can need and not want, but I cannot want and not need.\n\n\n\n\n\n\n\n\n\n\n\n\n\n
     </string>
-    <string name="name_question">What is your name?</string>
+    <string name="name_question">What is your nickname?</string>
+    <string name="nickname" />
 </resources>
