@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="myName"
+            type="com.example.mybio.MyName" />
+    </data>
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
@@ -15,7 +21,7 @@
         android:fontFamily="@font/roboto_thin"
         android:shadowColor="#333333"
         android:shadowDx="0"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center"
         android:textColor="#666666"
         android:textColorHighlight="#7CC0FF"
@@ -46,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/roboto"
-        android:text="@string/nickname"
+        android:text="@={myName.nickname}"
         android:textColor="#F2007EEE"
         android:textColorHighlight="#7CC0FF"
         android:textColorHint="#7CC0FF"
@@ -86,3 +92,4 @@
         android:textColor="#FFEB3B" />
 
 </LinearLayout>
+</layout>
